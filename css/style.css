@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 .productDescr {
   line-height: 1rem;
   text-align: start;
@@ -175,6 +180,7 @@
 }
 .c-main .c-main__calc {
   width: 100%;
+  border-bottom: 1px solid #434343;
 }
 .c-main .c-main__calc .c-calc__cards {
   display: grid;
@@ -214,6 +220,68 @@
 }
 .c-main .c-main__calc .c-calc__cards .calc-3 {
   grid-column: calc3;
+}
+
+.c-footer {
+  width: 100%;
+  background-color: #000;
+}
+.c-footer .c-footer__kn {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.c-footer .c-footer__kn img {
+  width: 100px;
+}
+.c-footer .c-footer__kn .c-kn__icons {
+  display: flex;
+  gap: 1rem;
+}
+.c-footer .c-footer__kn .c-kn__icons i {
+  color: white;
+  font-size: 2rem;
+}
+.c-footer .c-footer__dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-footer .c-footer__dev p {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.c-footer .c-footer__dev .c-dev__icons {
+  display: flex;
+  gap: 1rem;
+}
+.c-footer .c-footer__dev .c-dev__icons i {
+  color: white;
+  font-size: 1.5rem;
+}
+.c-footer .c-footer__contact {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.c-footer .c-footer__rights {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  background-color: #131313;
+}
+.c-footer .c-footer__rights p {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

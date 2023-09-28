@@ -13,6 +13,11 @@
     text-decoration: none;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+}
+
 // classes padrões
 .productDescr{
     line-height: 1rem;
@@ -209,8 +214,10 @@
 
     }
 
+    // calculadoras
     .c-main__calc{
         width: 100%;
+        border-bottom: 1px solid $secondary-background;
 
         .c-calc__cards{
             display: grid;
@@ -264,3 +271,76 @@
     }
 }
 
+// footer
+.c-footer{
+    width: 100%;
+    background-color: $background-color;
+
+    .c-footer__kn{
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        img{
+            width: 100px;
+        }
+
+        .c-kn__icons{
+            display: flex;
+            gap: 1rem;
+
+            i{
+                color: white;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .c-footer__dev{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        p{
+            color: #ffffff;
+            font-family: $font-default;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 100;
+        }
+
+        .c-dev__icons{
+            display: flex;
+            gap: 1rem;
+
+            i{
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .c-footer__contact{
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .c-footer__rights{
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-family: $font-default;
+        font-weight: 100;
+        text-align: center;
+        background-color: $secondary-background2;
+
+        p{
+            padding: 10px;
+        }
+    }
+}
