@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+* img {
+  width: 200px;
+}
 
+.c-header {
+  background-color: #1F1F1F;
+  width: 100%;
+  height: 15rem;
+  padding: 1rem;
+}
+.c-header .c-header__login {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.c-header .c-header__login a, .c-header .c-header__login span, .c-header .c-header__login i {
+  text-decoration: none;
+  color: #ffffff;
+}
+.c-header .c-header__login i {
+  font-size: 1.1rem;
+}
+.c-header .c-header__fav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-header .c-header__fav .c-search {
+  border-bottom: 1px solid white;
+  width: 200px;
+}
+.c-header .c-header__fav .c-search input {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+.c-header .c-header__fav .c-search input::placeholder {
+  color: #ffffff;
+}
+.c-header .c-header__fav .c-search button {
+  border: none;
+  color: #ffffff;
+}
+.c-header .c-header__fav .c-header__icons {
+  display: flex;
+  gap: 1.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
