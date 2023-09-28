@@ -16,7 +16,7 @@
 
 // header
 .c-header{
-    background: linear-gradient(to bottom, #626262, $background-color);
+    background-color: $background-color;
     width: 100%;
     height: 15rem;
     padding: 1rem;
@@ -41,7 +41,7 @@
 
     .c-header__logo{
         img{
-            width: 130px;
+            width: 200px;
         }
     }
 
@@ -96,6 +96,18 @@
             font-family: $font-default;
             font-size: 1.2rem;
             color: #ffffff;
+        }
+    }
+}
+
+// main
+.c-main{
+    width: 100%;
+    background-color: $background-color;
+
+    .c-main__carousel{
+        img{
+            height: 50vh;
         }
     }
 }
