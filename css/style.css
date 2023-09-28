@@ -9,6 +9,39 @@
   width: 100%;
 }
 
+.productDescr {
+  line-height: 1rem;
+  text-align: start;
+  font-weight: lighter;
+  font-family: "Work Sans", sans-serif;
+}
+
+.price {
+  color: #FFEA00;
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bolder;
+  line-height: 1rem;
+}
+
+.payment {
+  line-height: 1rem;
+  font-weight: 100;
+  font-size: 0.7rem;
+}
+
+.paymentDest {
+  color: #FFEA00;
+}
+
+.title-catalog {
+  text-align: center;
+  color: #FFEA00;
+  font-family: "Work Sans", sans-serif;
+  border-top: 1px solid #434343;
+  border-bottom: 1px solid #434343;
+}
+
 .c-header {
   background-color: #000;
   width: 100%;
@@ -50,7 +83,7 @@
   font-family: "Work Sans", sans-serif;
 }
 .c-header .c-header__fav .c-search input::placeholder {
-  color: #ffffff;
+  color: #434343;
 }
 .c-header .c-header__fav .c-search button {
   border: none;
@@ -83,8 +116,55 @@
   width: 100%;
   background-color: #000;
 }
+.c-main .c-main__carousel {
+  padding-bottom: 2rem;
+}
 .c-main .c-main__carousel img {
   height: 50vh;
+}
+.c-main .c-main__catalog {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.c-main .c-main__catalog .c-catalog-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__card {
+  max-width: 12rem;
+  margin: auto;
+  padding: 0px;
+  color: #ffffff;
+  height: 25rem;
+  border: none;
+  background-color: #131313;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__card .img-card {
+  background-color: #434343;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__card .card-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__more {
+  width: 100%;
+  max-width: 12rem;
+  margin: auto;
+  height: 25rem;
+  background-color: #131313;
+  color: white;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__more .card-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.c-main .c-main__catalog .c-catalog-items .c-catalog__more .card-more i {
+  font-size: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

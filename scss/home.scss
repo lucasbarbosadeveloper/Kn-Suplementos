@@ -13,6 +13,39 @@
     text-decoration: none;
 }
 
+// classes padrões
+.productDescr{
+    line-height: 1rem;
+    text-align: start;
+    font-weight: lighter;
+    font-family: $font-default;
+}
+
+.price{
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-family: $font-default;
+    font-weight: bolder;
+    line-height: 1rem;
+}
+
+.payment{
+    line-height: 1rem;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.paymentDest{
+    color: $color-primary;
+}
+
+.title-catalog{
+    text-align: center;
+    color: $color-primary;
+    font-family: $font-default;
+    border-top: 1px solid $secondary-background;
+    border-bottom: 1px solid $secondary-background;
+}
 
 // header
 .c-header{
@@ -62,7 +95,7 @@
                 font-family: $font-default;
 
                 &::placeholder{
-                    color: #ffffff;
+                    color: $secondary-background;
                 }
             }
 
@@ -105,9 +138,67 @@
     width: 100%;
     background-color: $background-color;
 
+    // carousel
     .c-main__carousel{
+        padding-bottom: 2rem;
         img{
             height: 50vh;
         }
+    }
+
+    // catalogos
+    .c-main__catalog{
+        width: 100%;
+        padding-bottom: 2rem;
+
+        .c-catalog-items{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+
+            .c-catalog__card{
+                max-width: 12rem;
+                margin: auto;
+                padding: 0px;
+                color: #ffffff;
+                height: 25rem;
+                border: none;
+                background-color: $secondary-background2;
+
+                .img-card{
+                    background-color: $secondary-background;
+                }
+
+                .card-infos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+    
+            }
+
+            .c-catalog__more{
+                width: 100%;
+                max-width: 12rem;
+                margin: auto;
+                height: 25rem;
+                background-color: $secondary-background2;
+                color: white;
+
+                .card-more{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    i{
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+
+
     }
 }
