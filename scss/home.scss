@@ -16,6 +16,7 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: $background-color;
 }
 
 // classes padrões
@@ -131,6 +132,8 @@ body{
 .c-nav{
     width: 100%;
     background-color: $background-color;
+    border-bottom: 1px solid $secondary-background;
+
 
     .c-nav__items{
         width: 100%;
@@ -150,6 +153,7 @@ body{
     width: 100%;
     background-color: $background-color;
 
+
     // carousel
     .c-main__carousel{
         padding-bottom: 2rem;
@@ -167,6 +171,7 @@ body{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0.8rem;
+            cursor: pointer;
 
             .c-catalog__card{
                 max-width: 12rem;
@@ -177,8 +182,10 @@ body{
                 border: none;
                 background-color: $secondary-background2;
 
-                .img-card{
+                .imgDiv{
+                    height: 15rem;
                     background-color: $secondary-background;
+
                 }
 
                 .card-infos{
@@ -192,7 +199,7 @@ body{
 
             .c-catalog__more{
                 width: 100%;
-                max-width: 12rem;
+                max-width: 11rem;
                 margin: auto;
                 height: 25rem;
                 background-color: $secondary-background2;
@@ -217,7 +224,6 @@ body{
     // calculadoras
     .c-main__calc{
         width: 100%;
-        border-bottom: 1px solid $secondary-background;
 
         .c-calc__cards{
             display: grid;
@@ -275,6 +281,9 @@ body{
 .c-footer{
     width: 100%;
     background-color: $background-color;
+    margin: auto;
+    border-top: 1px solid $secondary-background;
+
 
     .c-footer__kn{
         padding-top: 2rem;
@@ -298,37 +307,43 @@ body{
         }
     }
 
-    .c-footer__dev{
+    .c-footer__devCont{
         display: flex;
         flex-direction: column;
-        align-items: center;
 
-
-        p{
-            color: #ffffff;
-            font-family: $font-default;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: 100;
-        }
-
-        .c-dev__icons{
+        .c-footer__dev{
             display: flex;
-            gap: 1rem;
-
-            i{
-                color: white;
-                font-size: 1.5rem;
+            flex-direction: column;
+            align-items: center;
+    
+    
+            p{
+                color: #ffffff;
+                font-family: $font-default;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+    
+            .c-dev__icons{
+                display: flex;
+                gap: 1rem;
+    
+                i{
+                    color: white;
+                    font-size: 1.5rem;
+                }
             }
         }
-    }
+    
+        .c-footer__contact{
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
 
-    .c-footer__contact{
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
     }
 
     .c-footer__rights{
@@ -338,9 +353,38 @@ body{
         font-weight: 100;
         text-align: center;
         background-color: $secondary-background2;
+        margin-top: 10px;
 
         p{
             padding: 10px;
         }
+    }
+}
+
+// media query
+@media (min-width: 750px) {
+    .c-main .c-main__catalog .c-catalog-items {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .c-main .c-main__calc .c-calc__cards {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-footer .c-footer__devCont{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 900px) {
+    .c-main{
+        max-width: 900px;
+        margin: auto;
+        border: 1px solid $secondary-background;
     }
 }
