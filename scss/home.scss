@@ -60,6 +60,7 @@ body{
     color: #ffffff;
 }
 
+
 // header
 .c-header{
     background-color: $background-color;
@@ -78,6 +79,12 @@ body{
         a, span, i{
             text-decoration: none;
             color: #ffffff;
+        }
+
+        a{
+            &:hover{
+                color: $color-primary;
+            }
         }
 
         i{
@@ -115,6 +122,11 @@ body{
             button{
                 border: none;
                 color: #ffffff;
+
+                &:hover{
+                    background-color: $color-primary;
+                    color: #000;
+                }
             }
         }
 
@@ -124,6 +136,12 @@ body{
             gap: 1.5rem;
             color: #ffffff;
             font-size: 1.5rem;
+
+            i{
+                &:hover{
+                    color: $color-primary;
+                }
+            }
         }
     }
 }
@@ -144,6 +162,9 @@ body{
             font-family: $font-default;
             font-size: 1.2rem;
             color: #ffffff;
+            &:hover{
+                color: $color-primary;
+            }
         }
     }
 }
@@ -172,6 +193,7 @@ body{
             grid-template-columns: 1fr 1fr;
             gap: 0.8rem;
             cursor: pointer;
+            border-radius: 5px;
 
             .c-catalog__card{
                 max-width: 12rem;
@@ -185,6 +207,7 @@ body{
                 .imgDiv{
                     height: 15rem;
                     background-color: $secondary-background;
+                    border-radius: 5px;
 
                 }
 
@@ -193,6 +216,11 @@ body{
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-around;
+                }
+
+                &:hover{
+                    transform: scale(1.2);
+                    transition: 0.5s;
                 }
     
             }
@@ -215,6 +243,12 @@ body{
                         font-size: 3.5rem;
                     }
                 }
+
+                &:hover{
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+
             }
         }
 
@@ -260,6 +294,12 @@ body{
                         width: 100px;
                     }
                 }
+
+                &:hover{
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                }
+
             }
 
             .calc-1{
@@ -303,7 +343,12 @@ body{
             i{
                 color: white;
                 font-size: 2rem;
+
+                &:hover{
+                    color: $color-primary;
+                }
             }
+
         }
     }
 
@@ -332,6 +377,11 @@ body{
                 i{
                     color: white;
                     font-size: 1.5rem;
+
+                    &:hover{
+                        color: $color-primary;
+                    }
+    
                 }
             }
         }
@@ -342,6 +392,13 @@ body{
             align-items: center;
             justify-content: center;
             gap: 3rem;
+
+            p{
+                cursor: pointer;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
         }
 
     }
