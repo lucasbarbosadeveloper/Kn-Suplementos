@@ -261,6 +261,17 @@ body{
 
     }
 
+    // paralaxe
+    .c-main__paralaxe{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/7.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
     // calculadoras
     .c-main__calc{
         width: 100%;
