@@ -60,6 +60,15 @@ body{
     color: #ffffff;
 }
 
+.buttons{
+    color: #ffffff;
+
+    &:hover{
+        background-color: $color-primary;
+        color: #000;
+    }
+}
+
 
 // header
 .c-header{
@@ -90,6 +99,13 @@ body{
         i{
             font-size: 1.1rem;
         }
+
+        .c-modal{
+            .buttonSubmit{
+                background-color: $color-primary;
+                border: 1px solid $background-color;
+            }
+        }
     }
 
     .c-header__logo{
@@ -116,16 +132,6 @@ body{
 
                 &::placeholder{
                     color: $secondary-background;
-                }
-            }
-
-            button{
-                border: none;
-                color: #ffffff;
-
-                &:hover{
-                    background-color: $color-primary;
-                    color: #000;
                 }
             }
         }
